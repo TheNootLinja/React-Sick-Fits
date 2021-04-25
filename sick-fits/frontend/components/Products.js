@@ -36,7 +36,6 @@ export default function Products({ page }) {
       first: perPage,
     },
   });
-  console.log(data, error, loading);
   // This could be replaced with a loader animation
   if (loading) return <p>Loading...</p>;
   if (error) return <p>ERROR: {error.message}</p>;
